@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/grammer.css">
+    <style>
+        body {
+            margin:0px;
+            padding:0px;
+            font-family:"Arial";
+            font-family: lato ,sans-serif;
+            border: 7px solid #fff;
+        }
+        #me
+        {
+            margin-top: 8px;
+        }
+        .bar
+        {
+            width: 30px;
+            height: 4px;
+            background-color: #000;
+            margin: 6px -1px;
+        }
+        button.accordion
+        {
+            background-color: #111;
+            color: #818181;
+            cursor: pointer;
+            padding: 1px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 24px;
+            transition: 0.4s;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: -5px;
+            margin-left: 25px;
+        }
+        button.accordion.active,
+        button.accordion:hover
+        {
+            color: #fff;
+        }
+        button.accordion:after
+        {
+            content: "\002B";
+            font-size: 25px;
+            margin-top: -2.5px;
+            float: right;
+            color: #818181;
+            margin-right: 45px;
+        }
+        button.accordion.active:after
+        {
+            content: "\2212"; 
+        }
+        .panel
+        {   
+            padding: 20px 10px 1px 1px;
+            background-color: #111;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.5s linear;
+            opacity: 1;
+            color: #818181;
+            width: 210px;
+            margin-bottom: 5px;
+        }
+        div.panel.show
+        {
+            opacity: 1;
+            max-height: 250px;
+        }
+        .sidenav
+        {
+            height: 840px;
+            width: 0px;
+            position: absolute;
+            z-index: 1;
+            top: 300px;
+            left: 7px;
+            background: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px; 
+        }
+        .sidenav a
+        {
+            padding: 8px 8px 8px 25px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.5s;
+        }
+        .sidenav a:hover, .offcanvas a:focus
+        {
+            color: #ddd;
+        }
+        .sidenav .closebtn
+        {
+            position: absolute;
+            top: 0px;
+            right: 15px;
+            font-size: 45px;
+            margin-left: 50px;
+        }
+      
+        @media screen and (max-height: 450px)
+        {
+            .sidenav{padding-top: 45px;}
+            .sidenav a{font-size: 18px;}
+        }
+        #epre
+        {
+            font-size: 17px;
+            font-family: verdana;
+            padding-left: -30px;
+        }
+
+    </style>
+</head>
+    <body>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+
+                <a href="content.html">Content</a><br>
+                <button class="accordion">Memorize</button>
+                    <div class="panel">
+                        <a href="vocabulary.html">: Vocabulary</a>
+                        <a href="synonyms&antonyms.html">: Syn & Ant</a>
+                        <a href="ID.html">: Idioms </a>
+                    </div>
+
+                <button class="accordion">Have fun</button>
+                    <div class="panel">
+                        <a href="Subject.html">: with Subject</a>
+                        <a href="Tense.html">: with Tense</a>
+                        <a href="voice file.html">: with Voice</a>
+                        <a href="Narration.html">: with Narration</a>
+                    </div>    
+
+                <button class="accordion">Test Yourself</button>
+                    <div class="panel">
+                        <a href="exercise.html">: with Subject</a>
+                        <a href="exercise1.html">: with Tense</a>
+                        <a href="exercise 2.html">: with Voice</a>
+                        <a href="exercise 3.html">: with Narration</a>
+                    </div>  
+               
+            </div> 
+
+            <script type="text/javascript">
+                function openNav()
+                {
+                    document.getElementById('mySidenav')
+                    .style.width="230px";
+                }   
+                function closeNav()
+                {
+                    document.getElementById('mySidenav')
+                    .style.width="0px";
+                }  
+                //new
+                var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) 
+  {
+    acc[i].addEventListener("click", function() 
+    {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+    if (panel.style.maxHeight)
+    {
+        panel.style.maxHeight = null;
+    } 
+    else 
+    {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+    });
+  }
+
+
+
+            </script>
+
+        <table style="width:100%;height:100%;border-bottom: 7px solid #fff; padding:0px;margin:0px;border-spacing:0px;">
+            <tr style="width:100%;height:100%;border:0px;padding:0px;margin:0px;">
+                
+                <td style="width:70%;height:100%;border:0px;padding:0px;margin:0px;background-color:#00968D">
+                    <img src="../Images/download2.jpg" style="width:100%;left: 40px;position: relative; ">
+                    
+                </td>
+                <td style="width:30%;height:100%;border:0px;background-color:#00968D;padding:0px;margin:0px;">
+                    <div style="width:93%;padding-left:3.5%;padding-right:3.5%;height:100%;text-align:center;color:#fff;">
+                        <br><br>
+                        <h2 style="margin:0px;padding:0px;">&nbsp;&nbsp;&nbsp;Learn English with fun</h2>
+                        <br>
+                        <p id="topside">&nbsp;English is very useful &nbsp;&nbsp;&nbsp;&nbsp;language now a days.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Everyone should learn <br>&nbsp;&nbsp;&nbsp;&nbsp;such
+                           languages which are useful all over the world.
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <button style="width: 45px;height: 45px;cursor: pointer;top: 254px;position: absolute;" onClick="openNav()">
+            <div id="me">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </button>
+        <pre style="font-size: 23px;border: 0px solid #000;"  ><center><h3 >Do you speak English ?</h3>   If you speak English then its a good habit. But if you don't , 
+    you should learn English because now a days English is useful 
+    in every field of life whether it is your office or may be your 
+    classroom.
+    <h3 >So now it's time to learn English.</h3>     As you know English is a widely used language all over the world.
+        So you must have the knowledge of grammer to make your language      
+        correct.
+    <h3 >Let's Learn English With Fun.</h3>         The given tutorials and practice sessions will help you learn 
+    English in a easy way. So have a look.   
+
+
+
+
+                                     <img src="../Images/learn-english.png" width="500px" height="300px" border="2px solid #ccc;">
+
+
+
+</center>
+            </pre>
+
+
+
+
+
+            
+            <div style="width: 98%; height: 100px; background: grey;position: absolute;top: 212%; border: 5px solid #fff;">
+      <p style="font-size: 35px;font-family: Brush Script MT;right: 220px;position: absolute;top: -1px;">----->< Thanks for having Fun ><-----</p>  
+    </div>
+
+                 
+</body>
+</html>

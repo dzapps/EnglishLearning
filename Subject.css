@@ -1,0 +1,85 @@
+#capsub
+{
+	font-size: 50px;
+	font-family: arial;
+	color: #000;
+	padding-bottom: 20px;
+	position: absolute;
+	top: 500px;
+	left:110px;
+}
+.subtab
+{
+	font-size: 20px;
+	text-align: center;
+	color: #000;
+	background: #DCDCDC;
+}
+.hadtab
+{
+	font-size: 30px;
+	color: #000;
+	background: #DCDCDC;
+	position: absolute;
+	top: -50px;
+	left: -3px;
+	position: absolute;
+	width: 485px;
+	border: 3px solid gray;
+		
+	
+}
+#table
+{
+	position: absolute;
+	left: 190px;
+	top: 650px;
+	font-size: 20px;
+	text-align: center;
+	color: #000;
+	background: #DCDCDC;
+	width: 489px;
+}
+#cretborder
+{
+	
+	height: 940px;
+}
+#ptab
+{
+	font-size: 25px;
+	font-family: arial;
+	color: #000;
+	padding-bottom: 20px;
+	position: absolute;
+	top: 480px;
+	left:140px;
+}
+.pbottom
+{
+	font-size: 20px;
+	color: 	#000;
+	position: absolute;
+	left: 200px;
+	top: 850px;
+
+}
+.p2bottom
+{
+	font-size: 20px;
+	color: 	#000;
+	position: absolute;
+	left: 200px;
+	top: 960px;
+
+}
+#capsub{
+	font-size: 35px;
+	top: 300px;
+}
+#side
+{
+	height: 1000px;
+	position: absolute;
+
+}

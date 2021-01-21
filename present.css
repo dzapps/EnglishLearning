@@ -1,0 +1,48 @@
+
+.head
+{
+	text-align: center;
+	left: 20px;
+}
+#head
+{
+	border: 5px solid #fff;
+	top: 50.9%;
+	height: 1572PX;
+	position: absolute;
+	padding-left: -20px;
+}
+#head2
+{
+	border: 5px solid #fff;
+	top: 50.9%;
+	height: 1890PX;
+	position: absolute;
+	left: 0;
+	padding-left: -20px;
+}
+#head3
+{
+	border: 5px solid #fff;
+	top: 50.9%;
+	height: 1610PX;
+	position: absolute;
+	padding-left: -20px;
+}
+.tab
+{
+	padding-left: 180px;
+	font-family: verdana;
+	font-size: 20px;
+}
+.tab_2
+{
+	padding-left: 150px;
+	font-size: 18px;
+	font-family: verdana;
+}
+#f
+{
+	font-size: 15px;
+	text-align: center;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise Voice</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/grammer.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/present.css">
+    <style>
+        body {
+            margin:0px ;
+            padding:0px ;
+            border: 5px solid #fff;
+            font-family:"Arial";
+            
+        }
+        
+    </style>
+</head>
+    <body>
+        <table style="width:100%;height:100%;border-bottom:5px solid #fff;padding:0px;margin:0px;border-spacing:0px;">
+            <tr style="width:100%;height:100%;border:0px;padding:0px;margin:0px;">
+                
+                <td style="width:70%;height:100%;border:0px;padding:0px;margin:0px;background-color:#00968D">
+                    <img src="../Images/download2.jpg" style="width:100%;">
+                    
+                    
+                </td>
+                <td style="width:30%;height:100%;border:0px;background-color:#00968D;padding:0px;margin:0px;">
+                    <div style="width:93%;padding-left:3.5%;padding-right:3.5%;height:100%;text-align:center;color:#fff;">
+                        <br><br>
+                        <h2 style="margin:0px;padding:0px;">Learn English with fun</h2>
+                        <br>
+                        <p id="topside">English is very useful language now a days. Everyone should learn such
+                           languages which are useful all over the world.<br>Here are some leasons which will help you to learn english. 
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        
+        <pre style="font-size: 50px;">         Voice Exercise </pre>
+        <p id="s">[ Change the Voice ]</p><br>
+         <form name="example" id="set">
+           &nbsp;&nbsp;&nbsp;&nbsp; Q.1&nbsp;&nbsp;I will make tea. <br><br>
+            <input type="button" value="Answer :" onclick="cal1()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answera" value="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re1()" id="rleft"><br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp; Q.2  &nbsp;&nbsp;We were attending the party.<br><br>
+            <input type="button" value="Answer :" onclick="cal2()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answerb" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re2()" id="rleft"><br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp; Q.3  &nbsp;&nbsp;You had done your homework.<br><br>
+            <input type="button" value="Answer :" onclick="cal3()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answerc" value="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re3()" id="rleft"><br><br>
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp; Q.4 &nbsp;&nbsp;They will have opened the shop.<br><br>
+            <input type="button" value="Answer :" onclick="cal4()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answerd" value="" ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re4()" id="rleft"><br><br>
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp; Q.5 &nbsp;&nbsp;We were playing cricket.<br><br>
+            <input type="button" value="Answer :" onclick="cal5()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answere" value="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re5()" id="rleft"><br><br>
+
+       
+            &nbsp;&nbsp;&nbsp;&nbsp; Q.6 &nbsp;&nbsp;He broke the glass.<br><br>
+            <input type="button" value="Answer :" onclick="cal6()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answerf" value="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re6()" id="rleft"><br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp; Q.7  &nbsp;&nbsp;Yesterday a person killed someone.<br><br>
+            <input type="button" value="Answer :" onclick="cal7()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answerg" value="" id="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re7()" id="rleft"><br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp; Q.8 &nbsp;&nbsp;Mumma has made the dinner.<br><br>
+            <input type="button" value="Answer :" onclick="cal8()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answerh" value="" ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re8()" id="rleft"><br><br>
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp; Q.9  &nbsp;&nbsp;I have taken food.<br><br>
+            <input type="button" value="Answer :" onclick="cal9()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answeri" value="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re9()" id="rleft"><br><br>
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp; Q.10  &nbsp;&nbsp;I open the shop everyday at 7AM.<br><br>
+            <input type="button" value="Answer :" onclick="cal10()" id="left">&nbsp;&nbsp;&nbsp;<input type="button" id="blank" name="Answerj" value="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" onclick="re10()" id="rleft"><br><br><br><br>
+
+
+        </form>
+
+
+
+
+    <script type="text/javascript">
+        //Subject
+
+        function cal1() 
+        {
+            document.example.Answera.value = (document.example.Answera.value = "The tea will be made.")
+        }
+        function re1()
+        {
+            document.example.Answera.value = (document.example.Answera.value = "")
+        }
+
+         function cal2() 
+        {
+            document.example.Answerb.value = (document.example.Answerb.value = "The party was being attended.")
+        }
+        function re2()
+        {
+            document.example.Answerb.value = (document.example.Answerb.value = "")
+        }
+
+         function cal3() 
+        {
+            document.example.Answerc.value = (document.example.Answerc.value = "Your homework had been done.")
+        }
+        function re3()
+        {
+            document.example.Answerc.value = (document.example.Answerc.value = "")
+        }
+
+         function cal4() 
+        {
+            document.example.Answerd.value = (document.example.Answerd.value = "The shop will have been opened.")
+        }
+        function re4()
+        {
+            document.example.Answerd.value = (document.example.Answerd.value = "")
+        }
+
+         function cal5() 
+        {
+            document.example.Answere.value = (document.example.Answere.value = "The cricket was being played.")
+        }
+        function re5()
+        {
+            document.example.Answere.value = (document.example.Answere.value = "")
+        }
+        function cal6() 
+        {
+            document.example.Answerf.value = (document.example.Answerf.value = "The glass was broken.")
+        }
+        function re6()
+        {
+            document.example.Answerf.value = (document.example.Answerf.value = "")
+        }
+
+         function cal7() 
+        {
+            document.example.Answerg.value = (document.example.Answerg.value = "someone was killed Yesterday.")
+        }
+        function re7()
+        {
+            document.example.Answerg.value = (document.example.Answerg.value = "")
+        }
+
+         function cal8() 
+        {
+            document.example.Answerh.value = (document.example.Answerh.value = "The dinner had been made.")
+        }
+        function re8()
+        {
+            document.example.Answerh.value = (document.example.Answerh.value = "")
+        }
+
+         function cal9() 
+        {
+            document.example.Answeri.value = (document.example.Answeri.value = "Food has been taken.")
+        }
+        function re9()
+        {
+            document.example.Answeri.value = (document.example.Answeri.value = "")
+        }
+
+         function cal10() 
+        {
+            document.example.Answerj.value = (document.example.Answerj.value = "The shop is opened everyday at 7AM.")
+        }
+        function re10()
+        {
+            document.example.Answerj.value = (document.example.Answerj.value = "")
+        }
+
+    </script>
+
+    <style type="text/css">
+        #set
+        {
+            font-family: Bookman Old Style;
+            font-size: 25px;
+        }
+        #left:hover,#rleft:hover
+        {
+            background-color: #ddd;
+        }
+        #left
+        {
+            position: relative;
+            left: 40px;
+            font-size: 23px;
+            color: #000;
+            background-color: #bbb;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #888;
+            height: 35px;
+        }
+        #blank
+        {
+            position: absolute;
+            width: 450px;
+            height: 35px;
+            left: 180px;
+            background-color: #bbb;
+            font-size: 23px;
+        }
+        #rleft
+        {
+            position: absolute;
+            left: 650px;
+            font-size: 23px;
+            color: #000;
+            background-color: #bbb;
+            cursor: pointer;
+            border: 2px solid #888;
+            height: 35px;
+        }
+        #s
+        {
+            font-size: 25px;
+            position: absolute;
+            right: 20px;
+            top: 400px;
+        }
+    </style>
+
+
+<button type="button" style="font-size: 30px;height: 65px;top: 1700px;position: absolute;right: 26px;border: 2px solid #000;background-color: ;" id="Switch" >
+    <a href="Index.html"><B>&#8678;Switch Back</B></a>
+    </button>
+
+
+     <div style="width: 98.9%; height: 100px; background: grey;position: absolute;top: px; border: 5px solid #fff;left: 0px;">
+      <p style="font-size: 35px;font-family: Brush Script MT;right: 220px;position: absolute;top: -1px;">----->< Thanks for having Fun ><-----</p>  
+    </div>
+
+
+    </div>
+
+
+
+
+    </body>
+    </html>
